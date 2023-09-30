@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "django-user-plus"
+version = "0.1.0"
+description = "An improved custom user model for django projects"
+authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "django_user_plus"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+django = "^4.2.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
