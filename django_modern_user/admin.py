@@ -4,7 +4,7 @@ from .models import ModernUser
 
 
 @admin.register(ModernUser)
-class CustomUserAdmin(UserAdmin):
+class ModernUserAdmin(UserAdmin):
     """Define admin model for custom User model with no email field.
 
     You can find detailed examples here:
