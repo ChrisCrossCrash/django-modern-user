@@ -13,7 +13,6 @@ include = [
     "django_modern_user/static/**/*",
     "django_modern_user/templates/**/*",
     "docs/**/*",
-
 ]
 
 [tool.poetry.dependencies]
