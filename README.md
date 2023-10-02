@@ -1,3 +1,3 @@
-# Django User Plus
+# Django Modern User
 
 An improved user model for Django.

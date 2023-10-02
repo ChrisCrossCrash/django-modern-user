@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 
 
-class UserPlusManager(BaseUserManager):
+class ModernUserManager(BaseUserManager):
     """A custum user manager that accounts for the modified fields of the custom User model.
 
     "Writing a manager for a custom user model" (Django docs):
@@ -41,7 +41,7 @@ class UserPlusManager(BaseUserManager):
         return self._create_user(email, password, **extra_fields)
 
 
-class UserPlus(AbstractUser):
+class ModernUser(AbstractUser):
     """A custom user model for this project.
 
     Django highly recommends setting up a custom User model, even if the default user model is sufficient.
@@ -62,7 +62,7 @@ class UserPlus(AbstractUser):
     REQUIRED_FIELDS = []
 
     # Set the custom user manager
-    objects = UserPlusManager()
+    objects = ModernUserManager()
 
     def save(self, *args, **kwargs):
         # Convert the email to lowercase before saving

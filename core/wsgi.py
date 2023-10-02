@@ -1,5 +1,5 @@
 """
-WSGI config for django_user_plus project.
+WSGI config for django_modern_user project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 

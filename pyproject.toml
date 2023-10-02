@@ -1,16 +1,16 @@
 [tool.poetry]
-name = "django-user-plus"
+name = "django-modern-user"
 version = "0.1.1"
 description = "An improved custom user model for django projects"
 authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
 license = "MIT"
 readme = "README.md"
-packages = [{include = "django_user_plus"}]
+packages = [{include = "django_modern_user"}]
 include = [
     "LICENSE",
     "README.md",
-    "django_user_plus/static/**/*",
-    "django_user_plus/templates/**/*",
+    "django_modern_user/static/**/*",
+    "django_modern_user/templates/**/*",
     "docs/**/*",
 
 ]
