@@ -6,6 +6,7 @@ authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "django_modern_user"}]
+repository = "https://github.com/ChrisCrossCrash/django-modern-user"
 include = [
     "LICENSE",
     "README.md",
