@@ -4,6 +4,9 @@ Django Modern User is a custom user model for Django projects that replaces the 
 
 ## Installation
 
+> [!IMPORTANT]
+> The instructions below are intended for integrating `django-modern-user` into new projects. Incorporating this package into existing projects, especially those with existing user data, can be complex and requires careful database migrations and potentially some code adjustments. The integration into projects with existing users is beyond the scope of this documentation.
+
 1. Install `django-modern-user` via pip:
    ```bash
    python -m pip install django-modern-user
