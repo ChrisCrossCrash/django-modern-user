@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-user-plus"
-version = "0.1.0"
+version = "0.1.1"
 description = "An improved custom user model for django projects"
 authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
 license = "MIT"
