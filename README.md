@@ -54,19 +54,24 @@ This setup allows you to further customize your user model and admin interface w
 
 ## Usage
 
-With `django-modern-user`, authentication is done using the email field. The email field is case-insensitive, ensuring a user-friendly authentication process.
+With `django-modern-user` and your subclassed user model, authentication is done using the email field. The email field is case-insensitive, ensuring a user-friendly authentication process.
 
-Here's an example of how you might create a new user:
+First, ensure that you have created a subclass of `ModernUser` as described in the [Installation](#installation) section.
+
+Here's an example of how you might create a new user with your subclassed user model:
 
 ```python
-from django_modern_user.models import ModernUser
+# Assume you have defined YourUser in your models.py
+from <your_app_name>.models import CustomUser
 
 # Create a new user
-user = ModernUser.objects.create_user(email='example@example.com', password='password123')
+user = CustomUser.objects.create_user(email='example@example.com', password='password123')
 
 # Create a superuser
-superuser = ModernUser.objects.create_superuser(email='admin@example.com', password='password123')
+superuser = CustomUser.objects.create_superuser(email='admin@example.com', password='password123')
 ```
+
+In this example, replace <your_app_name> with the name of your Django app. This way, you're creating users with your project-specific user model, which subclasses django-modern-user's ModernUser.
 
 ## Custom User Manager
 
