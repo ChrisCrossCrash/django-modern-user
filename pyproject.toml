@@ -6,6 +6,14 @@ authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
 license = "MIT"
 readme = "README.md"
 packages = [{include = "django_user_plus"}]
+include = [
+    "LICENSE",
+    "README.md",
+    "django_user_plus/static/**/*",
+    "django_user_plus/templates/**/*",
+    "docs/**/*",
+
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
