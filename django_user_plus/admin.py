@@ -1,8 +1,9 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import CustomUser
+from .models import UserPlus
 
-@admin.register(CustomUser)
+
+@admin.register(UserPlus)
 class CustomUserAdmin(UserAdmin):
     """Define admin model for custom User model with no email field.
 

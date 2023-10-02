@@ -126,4 +126,4 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Override the default User model
 # https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
 
-AUTH_USER_MODEL = "django_user_plus.CustomUser"
+AUTH_USER_MODEL = "django_user_plus.UserPlus"
