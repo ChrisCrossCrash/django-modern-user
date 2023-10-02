@@ -72,10 +72,6 @@ superuser = ModernUser.objects.create_superuser(email='admin@example.com', passw
 
 `django-modern-user` comes with a custom user manager, `UserPlusManager`, which handles user creation and ensures the email field is used for authentication.
 
-## Further Customization
-
-You can further customize the `ModernUser` model and `UserPlusManager` to meet the specific needs of your project.
-
 ## Contributing
 
 Feel free to fork the project, open a PR, or submit an issue if you find bugs or have suggestions for improvements.
