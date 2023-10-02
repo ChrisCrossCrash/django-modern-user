@@ -22,7 +22,16 @@ Django Modern User is a custom user model for Django projects that replaces the 
    AUTH_USER_MODEL = "django_modern_user.ModernUser"
    ```
 
-4. Run migrations to create the necessary database table:
+4. To use the provided `ModernUserAdmin` class in your Django admin site, import `ModernUserAdmin` and `ModernUser` from `django_modern_user` in your `admin.py` file:
+   ```python
+   from django_modern_user.admin import ModernUserAdmin
+   from django_modern_user.models import ModernUser
+   from django.contrib import admin
+
+   admin.site.register(ModernUser, ModernUserAdmin)
+   ```
+
+5. Run migrations to create the necessary database table:
    ```bash
    python manage.py migrate
    ```
