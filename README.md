@@ -41,7 +41,7 @@ Django Modern User is a custom user model for Django projects that replaces the 
    from .models import CustomUser
 
    @admin.register(CustomUser)
-   class YourUserAdmin(ModernUserAdmin):
+   class CustomUserAdmin(ModernUserAdmin):
        pass
    ```
 
@@ -61,7 +61,7 @@ First, ensure that you have created a subclass of `ModernUser` as described in t
 Here's an example of how you might create a new user with your subclassed user model:
 
 ```python
-# Assume you have defined YourUser in your models.py
+# Assume you have defined CustomUser in your models.py
 from <your_app_name>.models import CustomUser
 
 # Create a new user
