@@ -35,7 +35,7 @@ jobs:
     - name: Install dependencies
       run: |
         poetry add django@${{ matrix.django-version }}
-        poetry install
+        poetry install --only main
 
     - name: Set up database
       run: |
@@ -67,7 +67,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          poetry install
+          poetry install --only main
 
       - name: Build package
         run: |
