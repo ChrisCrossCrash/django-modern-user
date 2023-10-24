@@ -19,6 +19,9 @@ include = [
 python = "^3.8 || ^3.9 || ^3.10 || ^3.11"
 django = ">=3.2,<4.3"
 
+[tool.poetry.group.dev.dependencies]
+black = "^23.10.1"
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
