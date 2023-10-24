@@ -6,7 +6,6 @@ import django_modern_user.models
 
 
 class Migration(migrations.Migration):
-
     initial = True
 
     dependencies = [
