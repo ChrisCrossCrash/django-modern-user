@@ -17,7 +17,7 @@ include = [
 
 [tool.poetry.dependencies]
 python = "^3.8 || ^3.9 || ^3.10 || ^3.11"
-django = ">=3.2,<4.3"
+django = ">=3.2,<5.1"
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.10.1"
