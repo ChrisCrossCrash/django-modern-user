@@ -81,6 +81,14 @@ In this example, replace <your_app_name> with the name of your Django app. This 
 
 Feel free to fork the project, open a PR, or submit an issue if you find bugs or have suggestions for improvements.
 
+### How to release a new version
+
+1. Commit any code changes.
+2. Run `poetry version <version>` to update the version number in `pyproject.toml`. `<version>` can be `patch`, `minor`, or `major`.
+3. Commit the new version with a the message as it's version number (example: `v4.0.0`).
+4. Tag the commit with the version number (example: `git tag v4.0.0`).
+5. Push the commit and tag to the repository (example: `git push && git push --tags`).
+
 ## License
 
 This project is licensed under the MIT License. See the LICENSE file for details.
