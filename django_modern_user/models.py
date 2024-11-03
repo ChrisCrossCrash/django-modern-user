@@ -40,6 +40,18 @@ class ModernUserManager(BaseUserManager):
 
         return self._create_user(email, password, **extra_fields)
 
+    def get_by_natural_key(self, username):
+        """
+        Retrieves a user instance using the contents
+        of the field nominated by USERNAME_FIELD.
+
+        In `django-modern-user`, the USERNAME_FIELD is the email field.
+        We want to ensure that when a user is looked up by their email,
+        the lookup is case-insensitive.
+        """
+        email = username.lower()
+        return super().get_by_natural_key(email)
+
 
 class ModernUser(AbstractUser):
     """A custom user model for this project.
