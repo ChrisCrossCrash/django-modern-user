@@ -93,6 +93,13 @@ class ModernUserTests(TestCase):
         ModernUser.objects.create_user(email=email, password=password)
         self.assertIsNotNone(authenticate(email=email, password=password))
 
+    def test_user_authentication_email_case_insensitive(self):
+        email = "auth@example.com"
+        password = "testpassword123"
+        # Test with a capitalized email
+        ModernUser.objects.create_user(email=email, password=password)
+        self.assertIsNotNone(authenticate(email=email.upper(), password=password))
+
     def test_required_fields(self):
         self.assertEqual(ModernUser.REQUIRED_FIELDS, [])
 
