@@ -2,7 +2,14 @@
   "[python]": {
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
+  // VS Code Django test explorer
+  // https://code.visualstudio.com/docs/python/testing#_django-unit-tests
+  // This will have to be added to your user settings.json file:
+  // "python.experiments.optInto": [
+  //   "pythonTestAdapter"
+  // ],
   "python.testing.unittestEnabled": true,
+  "python.testing.unittestArgs": [],
   "[json]": {
     "editor.defaultFormatter": "vscode.json-language-features"
   }
