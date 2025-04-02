@@ -21,7 +21,7 @@ python = "~3.10 || ~3.11 || ~3.12 || ~3.13"
 # Support all Django versions that are supported by Django itself.
 # This should match the tested versions in `ci-cd.yml`.
 # https://www.djangoproject.com/download/#supported-versions
-django = ">=4.2,<5.2"
+django = ">=4.2,<6.0"
 
 [tool.poetry.group.dev.dependencies]
 black = "^24.8.0"

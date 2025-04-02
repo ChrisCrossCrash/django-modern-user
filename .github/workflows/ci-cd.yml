@@ -16,7 +16,7 @@ jobs:
         # Support currently supported Django versions
         # This should match the supported versions in the `pyproject.toml` file.
         # https://www.djangoproject.com/download/#supported-versions
-        django-version: ['4.2.*', '5.0.*', '5.1.*']
+        django-version: ['4.2.*', '5.1.*', '5.2.*']
     steps:
     - name: Checkout code
       uses: actions/checkout@v4
