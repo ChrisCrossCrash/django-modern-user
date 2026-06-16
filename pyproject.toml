@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "django-modern-user"
-version = "5.0.0"
+version = "6.0.0"
 description = "An improved custom user model for django projects"
 authors = ["Christopher Kumm <chrislkumm@protonmail.com>"]
 license = "MIT"
@@ -17,7 +17,7 @@ include = [
 
 [tool.poetry.dependencies]
 # The supported Python versions should also be tested in `ci-cd.yml`. 
-python = "~3.10 || ~3.11 || ~3.12 || ~3.13 || ~3.14"
+python = "~3.12 || ~3.13 || ~3.14"
 # Support all Django versions that are supported by Django itself.
 # This should match the tested versions in `ci-cd.yml`.
 # https://www.djangoproject.com/download/#supported-versions
