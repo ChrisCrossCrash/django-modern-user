@@ -6,11 +6,11 @@ class ModernUserManager(BaseUserManager):
     """A custum user manager that accounts for the modified fields of the custom User model.
 
     "Writing a manager for a custom user model" (Django docs):
-    https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#writing-a-manager-for-a-custom-user-model
+    https://docs.djangoproject.com/en/stable/topics/auth/customizing/#writing-a-manager-for-a-custom-user-model
     """
 
     # Serialize the manager into migrations
-    # https://docs.djangoproject.com/en/3.1/topics/migrations/#model-managers
+    # https://docs.djangoproject.com/en/stable/topics/migrations/#model-managers
     use_in_migrations = True
 
     def _create_user(self, email, password, **extra_fields):
@@ -57,7 +57,7 @@ class ModernUser(AbstractUser):
     """A custom user model for this project.
 
     Django highly recommends setting up a custom User model, even if the default user model is sufficient.
-    https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
+    https://docs.djangoproject.com/en/stable/topics/auth/customizing/#using-a-custom-user-model-when-starting-a-project
     """
 
     # Remove some of the default fields.

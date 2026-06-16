@@ -8,7 +8,7 @@ class ModernUserAdmin(UserAdmin):
     """Define admin model for custom User model with no email field.
 
     You can find detailed examples here:
-    https://docs.djangoproject.com/en/3.1/topics/auth/customizing/#a-full-example
+    https://docs.djangoproject.com/en/stable/topics/auth/customizing/#a-full-example
     https://www.fomfus.com/articles/how-to-use-email-as-username-for-django-authentication-removing-the-username#Register%20your%20new%20User%20model%20with%20Django%20admin
     """
 
